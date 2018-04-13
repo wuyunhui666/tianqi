@@ -1,0 +1,630 @@
+
+/* @Author: Administrator
+* @Date:   2018-03-24 08:47:40
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-04-04 16:50:57
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #f4f4f4;
+}
+/* 头部开始 */
+header{
+	width: 100%;
+	height: 4.7rem;
+	background: url('../img/screen.png') no-repeat center bottom,-webkit-linear-gradient(top,#313a79,#57a2dc);
+	background-size: contain;
+	overflow: hidden;
+}
+.chengshi{
+	font-size: 0.2rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.24rem;
+	margin-top: 0.14rem;
+}
+.kongqi{
+	width: 0.72rem;
+	height: 0.44rem;
+	border-radius: 0.08rem;
+	background: #f1ab62;
+	margin: 0.29rem 0 0 0.08rem;
+	overflow: hidden;
+}
+.kongqi h1{
+	font-size: 0.12rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.16rem;
+	margin-top: 0.06rem;
+}
+.kongqi h2{
+	font-size: 0.12rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.16rem;
+}
+header h3{
+	width: 0.9rem;
+	font-size: 0.88rem;
+	color: #fff;
+	line-height: 1.02rem;
+	margin-top: 0.1rem;
+	margin: 0 auto;
+}
+header h4{
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.47rem;
+}
+.shidu{
+	width: 0.9rem;
+	height: 0.32rem;
+	margin:0 auto;
+}
+.shidu h5{
+	width: 0.55rem;
+	font-size: 0.2rem;
+	line-height: 0.32rem;
+	color: #fff;
+	float: left;
+}
+.shidu h6{
+	width: 0.3rem;
+	font-size: 0.2rem;
+	line-height: 0.32rem;
+	color: #fff;
+	float: left;
+}
+.text{
+	width: 100%;
+	height: 0.2rem;
+	margin: 0.46rem auto 0;
+	font-size: 0.16rem;
+	color: #fff;
+	text-align: center;
+}
+/* 头部结束 */
+/* 今天明天天气开始 */
+.jinming{
+	width: 100%;
+	height: 1.02rem;
+	border-bottom: 0.01rem solid #e4e4e4;
+	overflow: hidden;
+	background: #fff;
+}
+.jinming_box{
+	width: 4.62rem;
+	height: 0.52rem;
+	margin: 0.26rem auto 0;
+	display: flex; 
+}
+.jinming_left{
+	width: 2.3rem;
+	height: 0.52rem;
+	border-right: 0.01rem solid #e4e4e4;
+	padding-right: 0.16rem;
+	box-sizing: border-box;
+}
+.jinming_right{
+	width: 2.3rem;
+	height: 0.52rem;
+	padding-left: 0.19rem;
+	box-sizing: border-box;
+}
+.jin_top{
+	width: 100%;
+	height: 0.16rem;
+	margin-bottom: 0.03rem;
+	display: flex;
+	justify-content: space-between;
+}
+.jin_bottom{
+	width: 100%;
+	height: 0.32rem;
+	display: flex;
+	justify-content: space-between;
+}
+.top_text{
+	width: 0.3rem;
+	height: 0.16rem;
+	font-size: 0.14rem;
+	color: #434343;
+}
+.top_wendu{
+	/* width: 0.38rem; */
+	height: 0.16rem;
+	/* margin-right: 0.16rem; */
+	font-size: 0.14rem;
+	float: left;
+	color: #434343;
+}
+.bottom_text{
+	width: 0.6rem;
+	height: 0.32rem;
+	font-size: 0.14rem;
+	color: #434343;
+	line-height: 0.32rem;
+}
+.bottom_tu{
+	width: 0.26rem;
+	height: 0.32rem;
+	background: #563;
+	margin-right: 0.18rem;
+	background: url('../img/0.png') no-repeat;
+	background-size: cover;
+}
+.mbottom_tu{
+	width: 0.26rem;
+	height: 0.32rem;
+	background: #563;
+	margin-right: 0.18rem;
+	background: url('../img/1.png') no-repeat;
+	background-size: cover;
+} 
+/* 今天明天天气结束 */
+/* 时间预报开始 */
+.shijianyubao{
+	width: 100%;
+	height: 1.47rem;
+	border-bottom: 0.01rem solid #e4e4e4;
+	border-top: 0.01rem solid #e4e4e4;
+	padding-top: 0.41rem;
+	overflow-x: auto;
+	box-sizing: border-box;
+	background: #fff;
+}
+.shijianyubao::-webkit-scrollbar{
+	height: 0;
+}
+.gundong{
+	width: 10rem;
+	height: 0.77rem;
+	display: flex;
+}
+.con1{
+	width: 0.82rem;
+	height: 100%;
+	flex-shrink: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	flex-direction: column; 
+}
+.shijian1{
+	width: 100%;
+	height: 0.1rem;
+	flex-shrink: 0;
+}
+.shijian1 span{
+	font-size: 0.1rem;
+	color: #b2b2b2;
+	float: left;
+	line-height: 0.1rem;
+}
+.shijian1 span:first-child{
+	margin-left: 0.27rem;
+}
+.img{
+	width: 0.26rem;
+	height: 0.32rem;
+	margin: 0 auto;
+	background: #563;
+	background: url('../img/1.png') no-repeat;
+	background-size: cover;
+	flex-shrink: 0;
+}
+.du{
+	width: 100%;
+	font-size: 0.12rem;
+	color: #b2b2b2;
+	text-align: center;
+	flex-shrink: 0;
+
+}
+/* 时间预报结束 */
+/* 未来天气开始 */
+.weilai{
+	width: 100%;
+	height: 3.89rem;
+	background: #fff;
+	border-bottom: 0.01rem solid #e4e4e4;
+	border-top: 0.01rem solid #e4e4e4;
+	margin-top: 0.1rem;
+	padding-top: 0.25rem;
+	overflow-x: auto;
+	box-sizing: border-box;
+}
+.weilai::-webkit-scrollbar{
+	height: 0;
+}
+.gundong1{
+	width: 10rem;
+	height: 3.36rem;
+	/* background: pink; */
+	display: flex;
+}
+.con{
+	width: 0.82rem;
+	height: 100%;
+	/* background: blue; */
+	flex-shrink: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	flex-direction: column; 
+}
+.riqi{
+	width: 100%;
+	font-size: 0.12rem;
+	color: #b2b2b2;
+	text-align: center;
+	flex-shrink: 0;
+}
+.shijian{
+	width: 100%;
+	height: 0.1rem;
+	flex-shrink: 0;
+}
+.shijian span{
+	font-size: 0.1rem;
+	color: #b2b2b2;
+	float: left;
+	line-height: 0.1rem;
+}
+.shijian span:first-child{
+	margin-left: 0.27rem;
+}
+.weaH{
+	width: 100%;
+	font-size: 0.12rem;
+	color: #b2b2b2;
+	text-align: center;
+	flex-shrink: 0;
+}
+.imgH{
+	width: 0.26rem;
+	height: 0.32rem;
+	margin: 0 auto;
+	background: #563;
+	background: url('../img/1.png') no-repeat;
+	background-size: cover;
+	flex-shrink: 0;
+}
+.high{
+	width: 100%;
+	font-size: 0.2rem;
+	color: #b2b2b2;
+	text-align: center;
+	flex-shrink: 0;
+}
+.low{
+	width: 100%;
+	font-size: 0.2rem;
+	color: #b2b2b2;
+	text-align: center;
+	flex-shrink: 0;
+}
+.imgL{
+	width: 0.26rem;
+	height: 0.32rem;
+	margin: 0 auto;
+	background: #563;
+	background: url('../img/1.png') no-repeat;
+	background-size: cover;
+	flex-shrink: 0;
+}
+.weaL{
+	width: 100%;
+	font-size: 0.12rem;
+	color: #b2b2b2;
+	text-align: center;
+	flex-shrink: 0;
+}
+.wind{
+    width: 100%;
+	font-size: 0.12rem;
+	color: #b2b2b2;
+	text-align: center;
+	flex-shrink: 0;
+}
+.wind_q{
+    width: 100%;
+	font-size: 0.12rem;
+	color: #b2b2b2;
+	text-align: center;
+	flex-shrink: 0;
+}
+/* 未来天气结束 */
+/* 服务开始 */
+.fuwu{
+	width: 100%;
+	height: 1.88rem;
+	border: 0.01rem solid #f2f2f2;
+	margin-top: 0.1rem;
+	background: #fff;
+	overflow-x: auto;
+}
+.swiper-container{
+	width: 100%;
+	height: 1.88rem;
+}
+/* .gundong2{
+	width: 10rem;
+	height: 1.88rem;
+	display: flex;
+} */
+.fuwu_list1{
+	width:100%;
+	height: 1.9rem;
+	border: 0.01rem solid #f2f2f2;
+	border-bottom: none;
+	flex-shrink: 0;
+	float: left;
+    box-sizing: border-box;
+}
+.fuwu::-webkit-scrollbar{
+	height: 0;
+}
+.fuwu_list2{
+	width:100%;
+	height: 1.9rem;
+	border: 0.01rem solid #f2f2f2;
+	border-bottom: none;
+	flex-shrink: 0;
+	float: left;
+	box-sizing: border-box;
+}
+.fuwu_list1 li{
+	width: 25%;
+	height: 0.94rem;
+	border-bottom: 0.01rem solid #f2f2f2;
+	border-right: 0.01rem solid #f2f2f2;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content:space-between; */
+	flex-direction: column;
+	box-sizing: border-box; 
+}
+.fuwu_list1 li:nth-child(4n){
+	border-right: none;
+}
+.fuwu_list1 i{
+	width: 0.28rem;
+	height: 0.32rem;
+    font-size: 0.18rem;
+    margin: 0.08rem auto 0;
+    color: #a4ade0;
+    text-align: center;
+    line-height: 0.32rem;
+    float: left;
+}
+.fuwu_list2 li{
+	width: 25%;
+	height: 0.94rem;
+	border-bottom: 0.01rem solid #f2f2f2;
+	border-right: 0.01rem solid #f2f2f2;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content:space-between; */
+	flex-direction: column;
+	box-sizing: border-box;
+}
+.fuwu_list2 li:nth-child(4n){
+	border-right: none;
+}
+
+.fuwu_list2 i{
+	width: 0.28rem;
+	height: 0.32rem;
+    font-size: 0.18rem;
+    margin: 0.08rem auto 0;
+    color: #a4ade0;
+    text-align: center;
+    line-height: 0.32rem;
+    float: left;
+}
+.neirong{
+	height: 0.26rem;
+	margin: 0 auto;
+	font-size: 0.14rem;
+	color: #434343;
+	text-align: center;
+	line-height: 0.26rem;
+}
+.caidan{
+	font-size: 0.12rem;
+	line-height: 0.12rem;
+	text-align: center;
+    color: #999999;
+}
+/* 服务结束 */
+.dibu{
+	width: 100%;
+	height: 0.82rem;
+	border: 0.01rem solid #f2f2f2;
+	padding: 0.15rem 0;
+	box-sizing: border-box;
+}
+.dibu_text{
+	width: 100%;
+	height: 0.52rem;
+}
+.dibu_text h1{
+	width: 3.5rem;
+	height: 0.26rem;
+	margin: 0 auto;
+}
+.dibu_text h1 span{
+	font-size: 0.16rem;
+	line-height: 0.26rem;
+	color: #b2b2b2;
+	float: left;
+	font-weight: normal;
+}
+.dibu_text h1 span:first-child{
+	margin-right:0.28rem ;
+}
+.dibu_text h1 span:first-child~span{
+	margin-right:0.15rem ;
+}
+.dibu_text h1 span:last-child{
+	margin-right:0 ;
+}
+.dibu_text h2{
+	width: 100%;
+	font-size: 0.16rem;
+	line-height: 0.26rem;
+	color: #b2b2b2;
+	float: left;
+	font-weight: normal;
+	text-align: center;
+}
+/* 城市开始 */
+.city{
+	width: 100%;
+	height: 7rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow-y: auto;
+	flex-direction: column;
+	background: #fff;
+	display: none;
+}
+/* .city::-webkit-scrollbar{
+	height: 0;
+} */
+.search{
+	width: 100%;
+	height: 0.45rem;
+	border-bottom: 0.01rem solid #eeeeee;
+	padding-left:0.13rem;
+	padding-top: 0.07rem;
+	box-sizing: border-box;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.search_box{
+	width: 4.64rem;
+	height: 0.3rem;
+}
+.search_left{
+	width: 4.27rem;
+	height: 100%;
+	float: left;
+	border-radius: 0.15rem;
+    background: #E6E6E6;
+}
+.search_right{
+	width: 0.35rem;
+	height: 100%;
+	float: right;
+	display: block;
+	width: 0.35rem;
+	/*height: 0.3rem;*/
+	line-height: 0.3rem;
+	font-size: 0.16rem;
+	color: #434343;
+}
+/*.search_right a{
+	display: block;
+	width: 0.35rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.16rem;
+	color: #434343;
+}*/
+.search_left i{
+	float: left;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #b9b9b9;
+}
+.search_left input{
+	float: left;
+	width: 3.98rem;
+	height: 0.3rem;
+    background: #E6E6E6;
+    border: none;
+    margin-left: 0.05rem;
+    border-top-right-radius: 0.15rem;
+    border-bottom-right-radius: 0.15rem;
+}
+input:focus{
+	outline: none;
+}
+.remen{
+	width: 100%;
+    height: auto;
+    padding-top: 0.08rem;
+	padding-left:0.13rem;
+	border-top: 0.01rem solid #e4e4e4;
+	box-sizing: border-box; 
+	background: #fff;
+	margin-top: 0.45rem;
+	flex-shrink: 0;
+	overflow: hidden;
+}
+/* .remencity{
+	width: 100%;
+	height: auto;
+} */
+.rencity{
+	width: 100%;
+	height: 0.46rem;
+	font-size: 0.16rem;
+	line-height: 0.46rem;
+	/* margin-top: 0.08rem; */
+	float: left;
+}
+.city_name{
+	width: 30%;
+	height: 0.32rem;
+	border-radius: 0.16rem;
+	background: #e4e4e4;
+	float: left;
+	margin-right: 0.16rem;
+	margin-bottom: 0.12rem;
+	font-size: 0.14rem;
+	text-align: center;
+	line-height: 0.32rem;
+	color: #434343;
+}
+
+/* .city li:first-child{
+	margin-left:0.13rem;
+}
+.city li:nth-child(4){
+	margin-left:0.13rem;
+}
+.city li:nth-child(7){
+	margin-left:0.13rem;
+}
+.city li:nth-child(10){
+	margin-left:0.13rem;
+} */
+.remenjingqu{
+	width: 100%;
+	height: 1.75rem;
+}
+.rejingqu{
+	width: 0.88rem;
+	height: 0.46rem;
+	font-size: 0.16rem;
+	text-align: center;
+}
+/* 城市结束 
